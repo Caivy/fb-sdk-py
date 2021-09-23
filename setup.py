@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='fb-sdk-py',
-    version="0.0.1",                # noqa: F821
+    version="0.0.1",             
     description='This client library is designed to support the Facebook Graph API',      
     author='Caivy',
     url='https://github.com/Caivy/fb-sdk-py',
