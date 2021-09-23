@@ -8,7 +8,7 @@ setup(
     author='Caivy',
     url='https://github.com/Caivy/fb-sdk-py',
     license='Apache',
-    packages=["fb_sdk"],
+    packages=["fbsdk"],
     long_description=open("README.md").read(),
     keywords=["python", "facebook", "API", "Faccebook Graph API", "requests"],
     classifiers=[

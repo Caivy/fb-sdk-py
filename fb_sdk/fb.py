@@ -14,7 +14,7 @@ FACEBOOK_0AUTH = "dialog/oauth?"
 VALID_API_VERSIONS = ["4.0", "5.0", "6.0", "7.0", "8.0", "9.0", "10.0", "11.0", "12.0"]
 VALID_SEARCH_TYPES = ["place", "placetopic"]
 
-class Facebook_SDK(object):
+class SDK(object):
     def __init__(self,
     access_token = None,
     timeout=None,
@@ -153,7 +153,7 @@ class Facebook_SDK(object):
 
 
 
-class Facebook_SDK_Error(Exception):
+class SDK_Error(Exception):
     def __init__(self, result):
         self.result = result
         self.code = None
