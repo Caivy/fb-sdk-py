@@ -124,7 +124,7 @@ class SDK(object):
             )
         except requests.HTTPError as e:
             response = json.loads(e.read())
-            raise Facebook_SDK_Error(response)
+            raise SDK_Error(response)
 
         headers = response.headers
         if "json" in headers["content-type"]:
@@ -143,12 +143,12 @@ class SDK(object):
                 if "expires" in query_str:
                     result["expires"] = query_str["expires"][0]
             else:
-                raise Facebook_SDK_Error(response.json())
+                raise SDK_Error(response.json())
         else:
-            raise Facebook_SDK_Error("Maintype was not text, image, or querystring")
+            raise SDK_Error("Maintype was not text, image, or querystring")
 
         if result and isinstance(result, dict) and result.get("error"):
-            raise Facebook_SDK_Error(result)
+            raise SDK_Error(result)
         return result
 
 
