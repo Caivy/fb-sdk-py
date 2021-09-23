@@ -18,6 +18,10 @@ setup(
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
+<<<<<<< HEAD
     ],
+=======
+    ]
+>>>>>>> 59d63878bbf8dcf660232da2899b5ffd5c0931e4
     install_requires=['requests']
 )
