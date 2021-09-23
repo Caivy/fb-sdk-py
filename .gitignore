@@ -1,3 +1,4 @@
 build
 dist
 facebook_sdk_py.egg-info
+setup.py
